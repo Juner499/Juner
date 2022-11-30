@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+    <script
+       src="https://kit.fontawesome.com/628ae522b8.js"
+      crossorigin="anonymous"
+    ></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+
+    <title>Главная</title>
+
+
+    <!-- Menu start -->
+    <nav
+      class="navbar navbar-expand-md navbar-light sticky-top"
+      style="background-color: rgb(255, 255, 255)"
+    >
+      <a class="navbar-brand" href="index.html"><img src="/juner/img/logo.jpg" alt="Logo"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Переключатель навигации"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Главная<span class="sr-only">(Текущая страница)</span></a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="Poems.html">Стихотворения</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Aphorisms.html">Афоризмы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Video.html">Видео</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Menu end -->
+
+
+    <style>
+      body {
+        font-family: 'Roboto Mono', monospace;
+        font-size: large;
+    }
+.car {
+position: relative;
+width: auto;
+color: #ffffff;
+text-align: center;
+}
+.news {
+        max-width: 22rem;
+        height: auto;
+        color: azure;
+        background-color: rgba(244, 246, 248, 0.9); /* четвертое значение - прозначность --> */
+        box-shadow: 0 0 5px 5px rgb(171, 181, 207);
+        margin: auto;
+        border: 1px solid rgb(53, 20, 236);
+        padding: 1.2rem;
+      }
+
+      .wave-container {  
+  height: 8vh;
+  background-color: rgba(223, 245, 209, 0.28);
+  position: relative;
+}
+
+.wave-container::before {   
+  content: "";
+  width: 100%;
+  height: 17px;
+  position: absolute;
+  bottom: -0.3%;
+  left: 0;
+  background-size: auto;
+  background-repeat: repeat no-repeat;
+  background-position: 85vw bottom;
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  88' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 64L50 60C100 57 200 49 300 33C400 17 500 -7 600 1C700 9 800 49 900 64C1000 80 1100 72 1150 68L1200 64V88H1150C1100 88 1000 88 900 88C800 88 700 88 600 88C500 88 400 88 300 88C200 88 100 88 50 88H0V64Z' fill='%23ffffff'/></svg>");
+}
+
+@media(max-width:850px) {
+  .wave-container::before {    
+    height: 12px
+  }  
+}
+    </style>
+  </head>
+
+
+
+
+<body>
+  <div class="wave-container">
+    <h1 class="text-center my-1 text-warning">Главная</h1>
+</div>
+
+    
+    <!-- Carousel start -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide mt-3"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleCaptions"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="Poems.html"><img src="/juner/img/1.JPG" class="d-block w-100" alt=""/></a>
+          <div class="carousel-caption d-none d-md-block">
+            <center><h5 class="news"><a href="Poems.html">Стихотворения</center></a></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+            <a href="Aphorisms.html"><img src="/juner/img/2.JPG" class="d-block w-100" alt="" /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <center><h5 class="news"><a href="Aphorisms.html">Афоризмы</a></center></h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+        <a href="Video.html"><img src="/juner/img/3.JPG" class="d-block w-100" alt="" /></a>
+          <div class="carousel-caption d-none d-md-block">
+            <center><h5 class="news"><a href="Video.html">Видео</a></center></h5>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Предыдущий</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleCaptions"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Следующий</span>
+      </a>
+    </div>
+    <!-- Carousel end -->
+
+    <!-- Contacts start -->
+    <div class="container mt-5">
+      <h2 class="text-center text-warning my-3">Обратная связь</h2>
+
+
+
+
+      <div class="row">
+        <div class="col-md-5">
+
+          <h4>E-mail:</h4>
+          <p><a href="mailto:juner499@yandex.ru">juner499@yandex.ru</a></p>
+          <div class="row col-md-6"><a href="https://vk.com/juner"><img src="/juner/img/vk.png" alt="vk"></a></div>
+        </div>
+
+
+
+         <div class="row">
+          <div class="col-md-1">
+        </div>
+        <div class="a" onclick="this.className = (this.className == 'a' ? 'b' : 'a'  )"><img src="/juner/img/me.jpg" class="card-img-top" alt="i"></div>
+      </div>
+    </div>
+
+    <!-- Contacts end -->
+
+
+
+    <!-- футер START -->
+    <footer>
+      <div class="container py-5 mt-3">
+        <center>
+          &copy; Все права защищены
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </center>
+      </div>
+    </footer>
+    <!-- футер END -->
+
+    <style>
+      .a img{
+        width:100px;
+        }
+      .b img{
+        width:400px;
+        }
+      </style>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
